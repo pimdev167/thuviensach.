@@ -1,0 +1,551 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(33, 33, 33);
+}
+
+.header-container {
+  height: 10vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: 0.5s transform ease;
+}
+.header-container .left-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 30%;
+  left: 10px;
+  font-size: 25px;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: rgba(231, 226, 226, 0.2);
+  cursor: pointer;
+}
+.header-container .right-box {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 30%;
+  right: 10px;
+  font-size: 25px;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: rgba(231, 226, 226, 0.2);
+}
+.header-container .navbar-container {
+  width: 100%;
+  background-color: rgba(17, 17, 17, 0.7);
+  height: auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+  position: fixed;
+  z-index: 2;
+}
+.header-container .navbar-container .nav {
+  display: flex;
+  width: 60%;
+}
+.header-container .navbar-container .nav a {
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  padding: 12px 25px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+.header-container .navbar-container .nav a:hover {
+  color: #1c7c26;
+}
+.header-container .navbar-container .search-container {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header-container .navbar-container .container-user {
+  display: flex;
+  margin-left: 80px;
+}
+.header-container .navbar-container .container-user .sign,
+.header-container .navbar-container .container-user .login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 35px;
+  border-radius: 20px;
+  background-color: rgba(231, 226, 226, 0.1);
+  font-family: "Roboto", sans-serif;
+  user-select: none;
+  cursor: pointer;
+}
+.header-container .navbar-container .container-user .sign {
+  color: white;
+}
+.header-container .navbar-container .container-user .sign:hover {
+  background-color: rgba(170, 170, 170, 0.3);
+}
+.header-container .navbar-container .container-user .login {
+  margin-left: 20px;
+  background-color: rgb(22, 176, 133);
+}
+.header-container .navbar-container .container-user .login:hover {
+  background-color: rgba(51, 189, 81, 0.3);
+}
+.header-container .navbar-container .container-user i {
+  color: white;
+  font-size: 25px;
+  margin-top: 12px;
+}
+.header-container .navbar-container .container-user .container-face {
+  margin-top: 5px;
+  width: 120px;
+  position: relative;
+}
+.header-container .navbar-container .container-user .container-face img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.header-container .navbar-container .container-user .container-face i {
+  position: absolute;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+section {
+  height: 70vh;
+}
+section .container-full {
+  color: white;
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+}
+section .container-full-content {
+  top: 0;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+section .container-full-content .container-content {
+  width: 50%;
+  height: 100%;
+  margin-top: 4rem;
+  margin-left: 4rem;
+}
+section .container-full-content .container-content .suggest {
+  padding-left: 5px;
+  height: 1.5rem;
+  padding-top: 5px;
+  width: 9rem;
+  background-color: #4d4d4d;
+  border-top-left-radius: 5rem;
+  border-top-right-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+  margin-bottom: -15px;
+}
+section .container-full-content .container-content .content {
+  width: 90%;
+  height: 93px;
+  overflow: hidden;
+  margin-bottom: 3rem;
+}
+section .container-full-content .container-content .attribute {
+  display: flex;
+  align-items: center;
+}
+section .container-full-content .container-content .attribute button {
+  width: 8rem;
+  height: 3rem;
+  margin-right: 1rem;
+  border-radius: 2rem;
+  background-color: rgb(22, 176, 133);
+  color: white;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+section .container-full-content .container-content .attribute button i {
+  margin-right: 0.5rem;
+}
+section .container-full-content .container-content .attribute .icon-like, section .container-full-content .container-content .attribute .icon-save {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(170, 170, 170, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+section .container-full-content .container-silde {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  background-color: rgba(27, 27, 27, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .container-full-content .container-silde .carousel {
+  margin-top: 1rem;
+  margin-right: 1rem;
+  position: relative;
+  width: 100%;
+  height: 400px;
+  perspective: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .container-full-content .container-silde .carousel .carousel-track {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 1s ease-in-out;
+}
+section .container-full-content .container-silde .carousel .carousel-track .slide {
+  position: absolute;
+  width: 200px;
+  height: 300px;
+  opacity: 0;
+  transition: transform 1s ease, opacity 1s ease;
+  border-radius: 10px;
+  overflow: hidden;
+}
+section .container-full-content .container-silde .carousel .carousel-track .slide img {
+  width: 100%;
+  height: 100%;
+}
+section .container-full-content .container-silde .carousel .carousel-track .active {
+  opacity: 1;
+  z-index: 1;
+  transform: translateX(0) scale(1.2) translateZ(200px);
+}
+section .container-full-content .container-silde .carousel .carousel-track .prev {
+  opacity: 1;
+  margin-left: 2rem;
+  transform: translateX(-220px) scale(1) translateZ(-100px);
+}
+section .container-full-content .container-silde .carousel .carousel-track .next {
+  opacity: 1;
+  margin-right: 2rem;
+  transform: translateX(220px) scale(1) translateZ(-100px);
+}
+section .container-full-content .container-silde .carousel .carousel-nav .prev-btn {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(11, 11, 11, 0.4);
+  border-radius: 50px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  cursor: pointer;
+  border: none;
+}
+section .container-full-content .container-silde .carousel .carousel-nav .next-btn {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(11, 11, 11, 0.4);
+  border-radius: 50px;
+  border: none;
+  color: white;
+}
+
+.trinh_tham_kinh_di, .literature {
+  margin-bottom: 120px;
+  color: white;
+}
+.trinh_tham_kinh_di h2, .literature h2 {
+  margin-left: 4rem;
+}
+.trinh_tham_kinh_di .container-full, .literature .container-full {
+  width: 100%;
+  height: 540px;
+  overflow: hidden;
+  position: relative;
+}
+.trinh_tham_kinh_di .container-full .fa-arrow-left, .literature .container-full .fa-arrow-left {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  z-index: 1;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+.trinh_tham_kinh_di .container-full .fa-arrow-right, .literature .container-full .fa-arrow-right {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  z-index: 1;
+  font-size: 40px;
+  cursor: pointer;
+  color: white;
+}
+.trinh_tham_kinh_di .container-full .container-book-kinh-di, .trinh_tham_kinh_di .container-full .container-book-van-hoc, .literature .container-full .container-book-kinh-di, .literature .container-full .container-book-van-hoc {
+  transition: 1s transform;
+  margin-top: 20px;
+  display: flex;
+  width: 40%;
+  padding: 0 20px;
+}
+.trinh_tham_kinh_di .container-full .container-book-kinh-di .book-item, .trinh_tham_kinh_di .container-full .container-book-van-hoc .book-item, .literature .container-full .container-book-kinh-di .book-item, .literature .container-full .container-book-van-hoc .book-item {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 240px;
+  margin-right: 20px;
+  background-color: transparent;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+.trinh_tham_kinh_di .container-full .container-book-kinh-di .book-item:hover, .trinh_tham_kinh_di .container-full .container-book-van-hoc .book-item:hover, .literature .container-full .container-book-kinh-di .book-item:hover, .literature .container-full .container-book-van-hoc .book-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.trinh_tham_kinh_di .container-full .container-book-kinh-di .book-item img, .trinh_tham_kinh_di .container-full .container-book-van-hoc .book-item img, .literature .container-full .container-book-kinh-di .book-item img, .literature .container-full .container-book-van-hoc .book-item img {
+  width: 150px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  margin-left: 45px;
+}
+.trinh_tham_kinh_di .container-full .container-book-kinh-di .book-item a button, .trinh_tham_kinh_di .container-full .container-book-van-hoc .book-item a button, .literature .container-full .container-book-kinh-di .book-item a button, .literature .container-full .container-book-van-hoc .book-item a button {
+  background-color: #1c7c26;
+  height: 40px;
+  width: 90px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+.trinh_tham_kinh_di .container-full .container-book-kinh-di .book-item a button:hover, .trinh_tham_kinh_di .container-full .container-book-van-hoc .book-item a button:hover, .literature .container-full .container-book-kinh-di .book-item a button:hover, .literature .container-full .container-book-van-hoc .book-item a button:hover {
+  background-color: rgb(10, 43, 10);
+}
+
+#registerForm, #loginForm {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+  background-color: rgba(5, 5, 5, 0.5);
+  z-index: 1001;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+#registerForm .modal-content, #loginForm .modal-content {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: auto;
+  border: 1px solid #888;
+  color: rgb(255, 255, 255);
+  width: 35%;
+  height: 90vh;
+  overflow-y: auto;
+  border-radius: 10px;
+  margin-bottom: 8vh;
+  margin-top: 6vh;
+  backdrop-filter: blur(5px);
+  position: relative;
+}
+#registerForm .modal-content #closeBtn, #registerForm .modal-content #closeBtn1, #loginForm .modal-content #closeBtn, #loginForm .modal-content #closeBtn1 {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 1rem;
+  height: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 17px;
+  background-color: white;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+}
+#registerForm .modal-content form, #loginForm .modal-content form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+#registerForm .modal-content form input, #loginForm .modal-content form input {
+  padding-left: 1rem;
+  width: 70%;
+  height: 3rem;
+  background-color: transparent;
+  margin-bottom: 1rem;
+  border: solid 1px white;
+  border-radius: 0.7rem;
+  color: white;
+  cursor: pointer;
+}
+#registerForm .modal-content form label, #loginForm .modal-content form label {
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+  margin-left: -9rem;
+  color: rgb(139, 138, 138);
+}
+#registerForm .modal-content form button, #loginForm .modal-content form button {
+  width: 74%;
+  background-color: rgb(29, 194, 155);
+  height: 3rem;
+  border-radius: 2rem;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 1rem;
+}
+#registerForm .modal-content form .remind, #loginForm .modal-content form .remind {
+  color: red;
+  display: none;
+}
+#registerForm .modal-content .login-other, #loginForm .modal-content .login-other {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+#registerForm .modal-content .login-other button, #loginForm .modal-content .login-other button {
+  background-color: rgba(172, 170, 170, 0.3);
+  color: white;
+  width: 45%;
+  height: 3rem;
+  border-radius: 3rem;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+#registerForm .modal-content .login-other button i, #loginForm .modal-content .login-other button i {
+  margin-right: 0.5rem;
+  font-size: 22px;
+}
+#registerForm .modal-content .clause, #loginForm .modal-content .clause {
+  margin-top: 3rem;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.container-message-heart, .container-message-save {
+  width: 300px;
+  height: 40px;
+  color: white;
+  position: fixed;
+  bottom: 20px;
+  left: -300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(29, 194, 155);
+  border-radius: 1rem;
+  transition: 0.3s all ease-in-out;
+}
+.container-message-heart span, .container-message-save span {
+  width: 26px;
+  height: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin-right: 0.5rem;
+  border-radius: 50%;
+}
+.container-message-heart span i, .container-message-save span i {
+  color: green;
+}
+.container-message-heart .message, .container-message-save .message {
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+
+.container-message-save {
+  bottom: 80px;
+}
+
+.footer-index {
+  background-color: rgb(28, 28, 28);
+  margin-bottom: -20px;
+  color: rgb(171, 169, 169);
+}
+.footer-index .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-index .container .contact-email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-index .container .contact-email i {
+  margin-right: 1rem;
+}
+.footer-index .container .contact-email i:hover {
+  color: white;
+}
+.footer-index .container .contact-phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-index .container .contact-phone i {
+  margin-right: 1rem;
+}
+.footer-index .container .contact-phone i:hover {
+  color: white;
+}
+.footer-index .container .contact-facebook i {
+  margin-right: 1rem;
+}
+.footer-index .container .contact-facebook i:hover {
+  color: white;
+}
+.footer-index .container .contact-facebook a {
+  text-decoration: none;
+}/*# sourceMappingURL=special.css.map */
